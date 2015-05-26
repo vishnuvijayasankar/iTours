@@ -1,0 +1,124 @@
+
+@font-face {
+   font-family: NewFont;
+   src: url(NewFont.otf);
+}
+html { 
+  font-size: 15px;
+  background: url(images/pleasant.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+margin: 0px;
+background-repeat: no-repeat;
+}
+body{ 
+  background: url(images/pleasant.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header{
+	text-align: center;
+	color:white;
+	background-color: black;
+	width: 100%;
+	position:absolute;
+	margin-bottom: 50px;
+	top:0;
+	position: fixed;
+	border-bottom: 1px solid silver;
+	z-index: 50;
+}
+
+#title{
+	float: left;
+	display: inline;
+	font-size: 45px;
+	margin: 9px 0px 0px 0px;
+	color: silver;
+}
+h1{
+	font-family: NewFont;
+	color: rgba(188, 170, 76, 1);
+	display: inline-block;
+	font-size: 45px;
+	margin:0px;
+	margin-top: 18px;
+	margin-left: 18px;
+	margin-bottom: 10px;
+}
+.social_links{
+	display: inline;
+}
+#Logo{
+	height: 40px;
+	padding: 10px;
+	float: left;
+}
+.logo{
+	height:40px;
+}
+li{
+	display: inline-block;
+	padding: 3px;
+}
+#Reg_Link{
+	float:right;
+	color:white;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	font-family: NewFont;
+	font-size: 30px;
+	color: rgba(188, 170, 76, 1);
+	text-decoration: none;
+}
+ul{
+	float: right;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 340px;
+	padding: 10px;
+	}
+#content{
+	margin-top: 75px;
+	padding: 20px;
+
+}
+#slider{
+	height: 450px;
+	width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid silver;
+}
+#content_text{
+	color:white;
+	background-color: black;
+	opacity: 0.9;
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px solid silver;
+}
+h2{
+	color: rgba(188, 170, 76, 1);
+}
+footer{
+	text-align: center;
+	color:white;
+	background-color: black;
+	width: 100%;
+	position:absolute;
+	opacity: 0.9;
+	margin-top: 50px;
+	border-top: 1px solid silver;
+}
+a{
+	color:rgba(255, 135, 0, 1);
+}
