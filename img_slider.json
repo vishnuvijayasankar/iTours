@@ -2,6 +2,54 @@
     "Destinations": [
         {
             "destinationName": "africa.jpg"
+        },
+        {
+            "destinationName": "images/reg.jpg"
+        },
+        {
+            "destinationName": "images/zebra.jpg"
+        },
+        {
+            "destinationName": "images/lion.jpg"
+        },
+        {
+            "destinationName": "images/elephants.jpg"
+        },
+        {
+            "destinationName": "images/safari-thumb.jpg"
+        },
+        {
+            "destinationName": "images/eleph.jpg"
+        },
+        {
+            "destinationName": "images/giphy.gif"
+        },
+        {
+            "destinationName": "images/South-African-Safari.jpg"
+        },
+        {
+            "destinationName": "images/horsesafari.jpg"
+        },
+        {
+            "destinationName": "images/African-Safari.jpg"
+        },
+        {
+            "destinationName": "images/luxury.jpeg"
+        },
+        {
+            "destinationName": "images/maxresdefault.jpg"
+        },
+        {
+            "destinationName": "images/luxury2.jpg"
+        },
+        {
+            "destinationName": "images/Walking_Safaris.png"
         }
+
+
+
+
+
+
     ]
 }

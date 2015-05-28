@@ -3,6 +3,7 @@
    font-family: NewFont;
    src: url(NewFont.otf);
 }
+
 html { 
   font-size: 15px;
   background: url(images/pleasant.jpg) no-repeat center center fixed; 
@@ -30,7 +31,6 @@ header{
 	position:absolute;
 	margin-bottom: 50px;
 	top:0;
-	position: fixed;
 	border-bottom: 1px solid silver;
 	z-index: 50;
 }
@@ -70,19 +70,36 @@ li{
 #Reg_Link{
 	float:right;
 	color:white;
+	padding:5px;
 	padding-top: 10px;
 	padding-bottom: 0px;
 	font-family: NewFont;
 	font-size: 30px;
 	color: rgba(188, 170, 76, 1);
 	text-decoration: none;
+	border-left: 1px solid silver;
+}
+#Gallery_link{
+	float:right;
+	color:white;
+	padding:5px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	font-family: NewFont;
+	font-size: 30px;
+	color: rgba(188, 170, 76, 1);
+	text-decoration: none;
+	border-left: 1px solid silver;
+}
+#Gallery{
+	margin-right: 13px;
 }
 ul{
 	float: right;
 	margin: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 340px;
+	width: auto;
 	padding: 10px;
 	}
 #content{
@@ -91,14 +108,17 @@ ul{
 
 }
 #slider{
-	height: 450px;
-	width: 1000px;
+	height: auto;
+	width: 75%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	border: 2px solid silver;
 }
 #content_text{
+	width:75%;
+	margin:auto;
+    display: block;
 	color:white;
 	background-color: black;
 	opacity: 0.9;
@@ -121,4 +141,55 @@ footer{
 }
 a{
 	color:rgba(255, 135, 0, 1);
+	text-decoration: none;
+}
+#company_name{
+	float: left;
+	text-decoration: none;
+	margin:0px;
+	padding:0px;
+	text-align: left;
+}
+#company_name li{
+	padding:0px;
+	margin:0px;
+}
+#mobile_register{
+	display: none;
+}
+@media (max-width: 950px) {
+    #company_name {
+       position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   margin:auto;
+   display: block;
+   text-align: center;
+    }  
+    #heading{
+    	display: none;
+    }
+    .social_links ul li{
+    	display: none;
+    }
+    header{
+    	border: none;
+    	background-color: transparent;
+    }
+    #mobile_register{
+	display: inline;
+	width:auto;
+	padding: 5px;
+	float: right;
+	position: fixed;
+	right: 0;
+	z-index: 100;
+	background-color: white;
+	border-radius: 5px 0px 0px 5px ;
+	opacity: 0.9;
+	top: 45px;
+}
+
 }

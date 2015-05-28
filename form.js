@@ -1,5 +1,5 @@
    $(document).ready(function(){
-        $.getJSON('http://10.1.4.130/Project_test/views/img_slider.json', function(data) {
+        $.getJSON('img_slider.json', function(data) {
             // $("#destinations option").remove();
             destinations = data['Destinations'];
 

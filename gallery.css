@@ -2,6 +2,7 @@
    font-family: NewFont;
    src: url(NewFont.otf);
 }
+
 html { 
   font-size: 15px;
   background: url(images/pleasant.jpg) no-repeat center center fixed; 
@@ -21,15 +22,14 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-#main_header{
+header{
 	text-align: center;
 	color:white;
 	background-color: black;
 	width: 100%;
 	position:absolute;
 	margin-bottom: 50px;
-	top: 0;
-	position: fixed;
+	top:0;
 	border-bottom: 1px solid silver;
 	z-index: 50;
 }
@@ -40,9 +40,8 @@ body{
 	font-size: 45px;
 	margin: 9px 0px 0px 0px;
 	color: silver;
-	cursor: pointer;
 }
-#trip{
+h1{
 	font-family: NewFont;
 	color: rgba(188, 170, 76, 1);
 	display: inline-block;
@@ -70,125 +69,65 @@ li{
 #Reg_Link{
 	float:right;
 	color:white;
+	padding:5px;
 	padding-top: 10px;
 	padding-bottom: 0px;
 	font-family: NewFont;
 	font-size: 30px;
 	color: rgba(188, 170, 76, 1);
 	text-decoration: none;
+	border-left: 1px solid silver;
 }
 #Gallery_link{
 	float:right;
 	color:white;
+	padding:5px;
 	padding-top: 10px;
 	padding-bottom: 0px;
+	font-family: NewFont;
 	font-size: 30px;
 	color: rgba(188, 170, 76, 1);
 	text-decoration: none;
+	border-left: 1px solid silver;
+}
+#Gallery{
+	margin-right: 13px;
 }
 ul{
 	float: right;
 	margin: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 265px;
+	width: auto;
 	padding: 10px;
 	}
-
-html{
-	font-size: 15px;
-}
-body{
-margin: 0px;
-}
-header{text-align: center;}
-#body_wrapper{
-	position: relative;
-	width: 560px;
-	margin-top: 150px;
-	margin-left: auto;
-    margin-right: auto;
-    border:10 px solid;
-}
-#main_wrapper{
-	
-	border-radius: 20px;
-/*	border: 1px solid #888888;*/
-
-/*	box-shadow: 10px 10px 5px #888888;*/
+#content{
+	margin-top: 75px;
+	padding: 20px;
 
 }
-form{
-	padding: 10px;
-}
-fieldset{
-	background-color: black;
-	color: rgba(255, 135, 0, 1);
-	opacity:0.9;
-	margin: 5px;
-	/*border-radius: 15px;*/
-	border:2px solid silver;
-	padding: 10px;
-	-moz-border-radius: 15px;
-	border-radius: 10px 10px 10px 10px ;
-	margin-bottom: 20px;
-	}
-label{
-	color: rgba(188, 170, 76, 1);
-}
-h1{
-	/*text-align: center;*/
-/*	text-shadow: 3px 2px 2px #888888;*/
-	font-family: NewFont;
-	font-size: 45px;
-	color: #E3E9E8;
-}
-input{
-	margin: 5px;
-	border-radius: 5px;
-	border: 1px solid #888888;
-	padding: 5px;
-/*	box-shadow: 2px 2px 1px #888888;*/
-
-}
-.radio_button{
-	box-shadow: none;
-}
-#sex_button{
-	color:white;
-}
-#submit_btn{
-	background-color: white;
-/*	box-shadow: 2px 2px 1px #888888;*/
-}
-
-select{
-/*	box-shadow: 2px 2px 1px #888888;*/
-}
-
-#Permenant_Address{
-	display:inline-block;
+#slider{
+	height: 120px;
+	width: 200px;
+	display: inline;
+	margin:20px;
 	float: left;
+	cursor: pointer;
+	border: 2px solid silver;
 }
-#Present_Address{
-	display:inline-block;
-	float: right;
-	
+#content_text{
+	width:75%;
+	margin:auto;
+    display: block;
+	color:white;
+	background-color: black;
+	opacity: 0.9;
+	padding: 20px;
+	margin-top: 20px;
+	border: 1px solid silver;
 }
-
-#submit_form{
-	text-align:center;
-}
-#age{
-	width: 4%;
-}
-#check_box{
-	margin-top: 1px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	display: block;
-	width: 100%;
-	clear: both;
+h2{
+	color: rgba(188, 170, 76, 1);
 }
 footer{
 	text-align: center;
@@ -199,15 +138,70 @@ footer{
 	opacity: 0.9;
 	margin-top: 50px;
 	border-top: 1px solid silver;
-}
-#ageBox{
-	display: inline;
-	margin-left: 50px;
+    bottom: 0;
+    position: fixed;
 }
 a{
 	color:rgba(255, 135, 0, 1);
 	text-decoration: none;
 }
-#country_state{
-	text-align: center;
+#company_name{
+	float: left;
+	text-decoration: none;
+	margin:0px;
+	padding:0px;
+	text-align: left;
+}
+#company_name li{
+	padding:0px;
+	margin:0px;
+}
+#mobile_register{
+	display: none;
+}
+#destinations{
+	
+	position: absolute;
+	padding: 20px;
+	width: 80%;
+    margin: 0 auto;
+    margin-top: 75px;
+    height:100%;
+    text-align: center;
+}
+@media (max-width: 950px) {
+    #company_name {
+       position:absolute;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   margin:auto;
+   display: block;
+   text-align: center;
+    }  
+    #heading{
+    	display: none;
+    }
+    .social_links ul li{
+    	display: none;
+    }
+    header{
+    	border: none;
+    	background-color: transparent;
+    }
+    #mobile_register{
+	display: inline;
+	width:auto;
+	padding: 5px;
+	float: right;
+	position: fixed;
+	right: 0;
+	z-index: 100;
+	background-color: white;
+	border-radius: 5px 0px 0px 5px ;
+	opacity: 0.9;
+	top: 45px;
+}
+
 }
