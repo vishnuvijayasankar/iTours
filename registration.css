@@ -70,21 +70,29 @@ li{
 #Reg_Link{
 	float:right;
 	color:white;
+	padding:5px;
 	padding-top: 10px;
 	padding-bottom: 0px;
 	font-family: NewFont;
 	font-size: 30px;
 	color: rgba(188, 170, 76, 1);
 	text-decoration: none;
+	border-left: 1px solid silver;
 }
 #Gallery_link{
 	float:right;
 	color:white;
+	padding:5px;
 	padding-top: 10px;
 	padding-bottom: 0px;
+	font-family: NewFont;
 	font-size: 30px;
 	color: rgba(188, 170, 76, 1);
 	text-decoration: none;
+	border-left: 1px solid silver;
+}
+#Gallery{
+	margin-right: 13px;
 }
 ul{
 	float: right;
