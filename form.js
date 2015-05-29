@@ -4,10 +4,28 @@
             destinations = data['Destinations'];
 
             $.each(destinations, function(id, destination) {
-                $('#destinations').append('<img id="slider" src="'+destination["destinationName"]+'">');
+                $('#destinations').append('<img class="slider" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'">');
             });
         });
     });
+
+// <input type="image" src="africa.jpg" style="width:20%" onclick="showImage();"/>
+//     <div id="loadingImage" style="display:none; z-index: 50; width: 100%; height: 100%; background-color: black;">
+//     <img src="africa.jpg" style="width:50%">
+//     </div>
+
+ // $(document).ready(function(){
+ //        $.getJSON('img_slider.json', function(data) {
+ //            // $("#destinations input").remove();
+ //            destinations = data['Destinations'];
+
+ //            $.each(destinations, function(id, destination) {
+ //                $('#destinations').append('<input class="slider" onclick="showImage();" type="image" id= "'+ id +'" src="'+destination["destinationName"]+'">'+'<div id="loadingImage">'+'<img id="big_image" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'">'+'</div>');
+ //                $('#popup').append('<img class="slider" id= "'+ id +'" src="'+destination["destinationName"]+'">');
+ //            });
+ //        });
+ //    });
+
 
 jQuery(function ($) {
     var input = {
@@ -238,4 +256,8 @@ function store(){
      var _State= document.MainForm.states.value;
      localStorage.setItem("_State", _State);
 
+    }
+function showImage(){
+        document.getElementById('loadingImage').style.display="inline-block";
+        document.getElementById('loadingImage').style.margin="auto";
     }
