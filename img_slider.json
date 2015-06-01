@@ -2,63 +2,78 @@
     "Destinations": [
         {
             "destinationName": "africa.jpg",
-            "caption": "Sunset"
+            "caption": "Sunset",
+            "id": "1"
         },
         {
             "destinationName": "images/reg.jpg",
-            "caption": "Sunrise"
+            "caption": "Sunrise",
+            "id": "2"
         },
         {
             "destinationName": "images/zebra.jpg",
-            "caption": "A Zeal of Zebras"
+            "caption": "A Zeal of Zebras",
+            "id": "3"
         },
         {
             "destinationName": "images/lion.jpg",
-            "caption": "Meet the King"
+            "caption": "Meet the King",
+            "id": "4"
         },
         {
             "destinationName": "images/elephants.jpg",
-            "caption": "A Parade of Elephants"
+            "caption": "A Parade of Elephants",
+            "id": "5"
         },
         {
             "destinationName": "images/safari-thumb.jpg",
-            "caption": "Elephant Safari"
+            "caption": "Elephant Safari",
+            "id": "6"
         },
         {
             "destinationName": "images/eleph.jpg",
-            "caption": "Orange River"
+            "caption": "Orange River",
+            "id": "7"
         },
         {
             "destinationName": "images/giphy.gif",
-            "caption": "Zebra Chasing Hyena"
+            "caption": "Zebra Chasing Hyena",
+            "id": "8"
         },
         {
             "destinationName": "images/South-African-Safari.jpg",
-            "caption": "Resting After a Chase"
+            "caption": "Resting After a Chase",
+            "id": "9"
         },
         {
             "destinationName": "images/horsesafari.jpg",
-            "caption": "Horse Safari"
+            "caption": "Horse Safari",
+            "id": "10"
         },
         {
             "destinationName": "images/African-Safari.jpg",
-            "caption": "Trecking"
+            "caption": "Trecking",
+            "id": "11"
         },
         {
             "destinationName": "images/luxury.jpeg",
-            "caption": "Resort"
+            "caption": "Resort",
+            "id": "12"
         },
         {
             "destinationName": "images/maxresdefault.jpg",
-            "caption": "Close Calls"
+            "caption": "Close Calls",
+            "id": "13"
         },
         {
             "destinationName": "images/luxury2.jpg",
-            "caption": "Wild Camps"
+            "caption": "Wild Camps",
+            "id": "14"
         },
         {
             "destinationName": "images/Walking_Safaris.png",
-            "caption": "Girraffes"
+            "caption": "Girraffes",
+            "id": "15"
         }
 
 

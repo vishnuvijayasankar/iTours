@@ -1,32 +1,27 @@
-   $(document).ready(function(){
+function popup(x){
+ 
+document.getElementById(x).style.display='block';
+document.getElementById('fade').style.display='block';
+}
+function closeP(y){
+  console.log(y);
+  document.getElementById(y).style.display='none';
+  document.getElementById('fade').style.display='none';
+}
+
+
+$(document).ready(function(){
         $.getJSON('img_slider.json', function(data) {
             // $("#destinations option").remove();
             destinations = data['Destinations'];
 
             $.each(destinations, function(id, destination) {
-                $('#destinations').append('<img class="slider" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'">');
+                $('#destinations').append('<a href = "javascript:void(0)" onclick = "popup('+destination["id"]+')" >'+'<img class="slider" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'">'+'</a>');
+                $('#popupContainer').append('<div id="'+destination["id"]+'" class="white_content"><a id="closeButton" href = "javascript:void(0)" ><h3>'+destination["caption"]+'</h3><img onclick ="closeP('+destination["id"]+')"  id="closeButton" src="images/close.png"</a><img class="popupImg" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'"></div>');
+
             });
         });
     });
-
-// <input type="image" src="africa.jpg" style="width:20%" onclick="showImage();"/>
-//     <div id="loadingImage" style="display:none; z-index: 50; width: 100%; height: 100%; background-color: black;">
-//     <img src="africa.jpg" style="width:50%">
-//     </div>
-
- // $(document).ready(function(){
- //        $.getJSON('img_slider.json', function(data) {
- //            // $("#destinations input").remove();
- //            destinations = data['Destinations'];
-
- //            $.each(destinations, function(id, destination) {
- //                $('#destinations').append('<input class="slider" onclick="showImage();" type="image" id= "'+ id +'" src="'+destination["destinationName"]+'">'+'<div id="loadingImage">'+'<img id="big_image" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'">'+'</div>');
- //                $('#popup').append('<img class="slider" id= "'+ id +'" src="'+destination["destinationName"]+'">');
- //            });
- //        });
- //    });
-
-
 jQuery(function ($) {
     var input = {
         "data": [{
