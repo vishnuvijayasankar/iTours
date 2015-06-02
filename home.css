@@ -3,6 +3,9 @@
    font-family: NewFont;
    src: url(NewFont.otf);
 }
+p{
+	text-align: justify;
+}
 
 html { 
   font-size: 15px;
@@ -130,14 +133,17 @@ h2{
 	color: rgba(188, 170, 76, 1);
 }
 footer{
-	text-align: center;
-	color:white;
+
 	background-color: black;
 	width: 100%;
 	position:absolute;
 	opacity: 0.9;
 	margin-top: 50px;
 	border-top: 1px solid silver;
+}
+footer p{
+	text-align: center;
+	color:white;
 }
 a{
 	color:rgba(255, 135, 0, 1);
@@ -209,7 +215,4 @@ a{
 	}
 
 
-}
-p{
-	text-align: justify;
 }
