@@ -176,37 +176,36 @@ function validateFunction(event)
 			alert("Email mismatch!!!");
 			return false;
 		}
-		else
-		{
-			if (confirm("Name: " + document.MainForm.fname.value+ " " + document.MainForm.sname.value + "\n\n" + "Date Of Birth: " + 
-				document.MainForm.dob_day.value + "/" + document.MainForm.dob_month.value + "/" + document.getElementById("dob_year").value 
-				+ "\n\n" + "Age: " + document.getElementById("age").value + "\n\n" + "Email: " + document.MainForm.first_email.value 
-				+ "\n\n" + "Mobile: " + document.MainForm.Mobile.value  + "\n\n" + "Address :  " + "\n" + document.MainForm.HouseName.value 
-				+ "\n" + document.MainForm.PostOffice.value 
-				+ "\n" + document.MainForm.District.value  + "\n" + document.MainForm.State.value 
-				+ "\n" + document.MainForm.Zipcode.value + "\n" + document.MainForm.country.value) == true) 
-			{
+		// else
+		// {
+		// 	if (confirm("Name: " + document.MainForm.fname.value+ " " + document.MainForm.sname.value + "\n\n" + "Date Of Birth: " + 
+		// 		document.MainForm.dob_day.value + "/" + document.MainForm.dob_month.value + "/" + document.getElementById("dob_year").value 
+		// 		+ "\n\n" + "Age: " + document.getElementById("age").value + "\n\n" + "Email: " + document.MainForm.first_email.value 
+		// 		+ "\n\n" + "Mobile: " + document.MainForm.Mobile.value  + "\n\n" + "Address :  " + "\n" + document.MainForm.HouseName.value 
+		// 		+ "\n" + document.MainForm.PostOffice.value 
+		// 		+ "\n" + document.MainForm.District.value  + "\n" + document.MainForm.State.value 
+		// 		+ "\n" + document.MainForm.Zipcode.value + "\n" + document.MainForm.country.value) == true) 
+		// 	{
 				
-        		return true;
-        	}
-     		else 
-     		{
-        	return false;
-    		}
+  //       		return true;
+  //       	}
+  //    		else 
+  //    		{
+  //       	return false;
+  //   		}
 
-			}
+		// 	}
       // if (true) {alert("Submitted Successfully!!!");};
 }
 
 
-function fillAddress(f) {
-  if(f.copyAddress.checked == true) {
-  	f.HouseName.value = f._HouseName.value;
-    f.PostOffice.value = f._PostOffice.value;
-    f.District.value = f._District.value;
-    f.State.value = f._State.value;
-    f.Zipcode.value = f._Zipcode.value;
-  }
+function fillAddress() {
+  	document.MainForm._HouseName.value = document.MainForm.HouseName.value;
+    document.MainForm._PostOffice.value = document.MainForm.PostOffice.value;
+    document.MainForm._District.value = document.MainForm.District.value;
+    document.MainForm._State.value = document.MainForm.State.value;
+    document.MainForm._Zipcode.value = document.MainForm.Zipcode.value;
+
 }
 function ageCalc() {
         var presentAge = 2015;
@@ -219,10 +218,8 @@ function isNumberKey(evt){
     return true;
 }
 function store(){
-     var FirstName= document.MainForm.fname.value;
-     localStorage.setItem("FName", FirstName);
-     var SecondName= document.MainForm.sname.value;
-     localStorage.setItem("SName", SecondName);
+     var FirstName= document.MainForm.name.value;
+     localStorage.setItem("Name", FirstName);
      var form_elements = document.getElementById('MainForm').elements;
      var selectedGender = form_elements['sex'].value;
      localStorage.setItem("Sex", selectedGender);

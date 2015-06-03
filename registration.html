@@ -4,6 +4,11 @@
     <link type="text/css" rel="stylesheet" href="registration.css">
     <link rel="icon" type="image/png" 
       href="images/favicon.ico"> 
+      	<link rel="stylesheet" type="text/css" href="responsiveform.css">
+	<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="responsiveform1.css" />
+	<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="responsiveform2.css" />
+	<link rel="stylesheet" media="screen and (max-width: 350px)" href="responsiveform3.css" />
+	<link type="text/css" rel="stylesheet" href="registration.css">
 <meta charset="UTF-8"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <title>Registration Form</title>  
@@ -14,34 +19,25 @@
 <li><a title="Home" href="home.html"><img id="Logo" src="images/Apple.png"></a></li>
 <li><p id="title">iTours</p></li>
 </ul>
-<h1 id="heading">Gallery</h1>
+<h1 id="heading">Registration</h1>
 <div class="social_links">
 <ul>
 <li><a href="http://www.facebook.com"><img class="logo" src="images/Facebook Logo.png"></a></li>	
 <li><a href="http://www.twitter.com"><img class="logo" src="images/twitter-icon-hover.png"></a></li>	
 <li><a href="http://www.googleplus.com"><img class="logo" src="images/gplus.png"></a></li>	
 <li><a href="http://www.instagram.com"><img class="logo" src="images/instagram-logo-icon.png"></a></li>
-<li id="Register"><a  href="registration.html" target="_blank"><b id="Reg_Link">Register Here</b></a></li>
-<li><a  href="home.html" target="_blank"><b id="Reg_Link">Home</b></a></li>	
+<li id="Register"><a  href="gallery.html" ><b id="Reg_Link">Gallery</b></a></li>
+<li><a  href="home.html"><b id="Reg_Link">Home</b></a></li>	
 </ul>
 </div>
 </header>
-<div id="mobile_register"><a href="home.html" target="_blank">Home</a></div>
-<div id="mobile_gallery"><a href="gallery.html" target="_blank">Gallery</a></div>
-<div id= "body_wrapper">
-<div>
-</div>
-<div id= "main_wrapper">
-<form id="MainForm" name="MainForm" method="post">
-<fieldset>
-<label>Name:</label>
-	<div><input type="text" id="fname" name="fname" placeholder="First name" required><input type="text" id="sname" name="sname" placeholder="Last name" required></div>
-</fieldset>
-<fieldset>
-<label>Sex:</label>
-	<div id="sex_button" ><span></span><input class="radio_button" type="radio" name="sex" value="male" checked>Male
-	<input class="radio_button" type="radio" name="sex" value="female">Female
-	</div>
+<div id="mobile_register"><a href="home.html">Home</a></div>
+<div id="mobile_gallery"><a href="gallery.html">Gallery</a></div>
+<div id="envelope">
+<form name= "MainForm" action="" method="post"> 
+<fieldset> 
+	<label>Your Name </label>
+	<input type="text" name="name" placeholder="Ashley Peterson" width="100px;" required>
 </fieldset>
 <fieldset>
 <label>Date of birth:</label>
@@ -174,32 +170,44 @@
 <option value="1941">1941</option>
 <option value="1940">1940</option>
 </select>
-<span id= "ageBox">
+<div id= "ageBox">
 <label>Age: </label>
 <input type="text" id="age">
-</span>
+</div>
 </fieldset>
-<fieldset>
-<label>Contact:</label>
+<fieldset> 
+	<label>Email Id </label>
 	<div>
-	<span><input type="email" name="first_email" oncopy="return false" onpaste="return false" required placeholder="Enter a valid email address"></span><span><input type="email" name="second_email" oncopy="return false" onpaste="return false" required placeholder="Repeat email (Don't paste)"><input name="Mobile" type="number" onkeypress="return isNumberKey(event)" maxlength="10" required placeholder="Mobile Number"></span>
+	<span><input type="email" name="first_email" oncopy="return false" onpaste="return false" required placeholder="Enter a valid email address"></span><span><input type="email" name="second_email" oncopy="return false" onpaste="return false" required placeholder="Repeat email (Don't paste)"></span>
 	</div>
+</fieldset>
+<fieldset> 	
+	<label>  Contact Number </label>
+	<input name="Mobile" type="number" onkeypress="return isNumberKey(event)" maxlength="10" required placeholder="Mobile Number">
+</fieldset>
+<fieldset> 	
+	<label>  Website URL </label>
+	<input required type="text" name="website" placeholder="www.yoursite.com">
 </fieldset>
 <fieldset>
 <div style="display: block">
 <div id="Present_Address">
 <label>Present Address:</label>
-<div ><input class="address_box" type="text" name="HouseName" placeholder="House name" required><br><input class="address_box" type="text" name="PostOffice" placeholder="Post Office" required><br><input class="address_box" type="text" name="District" placeholder="District" required><br><input class="address_box" type="text" name="State" placeholder="State" required><br><input class="address_box" type="number" name="Zipcode" placeholder="Zipcode" onkeypress="return isNumberKey(event)" maxlength="6" required><br>
+<div ><input class="address_box" type="text" name="HouseName" placeholder="House name" required><br><input class="address_box" type="text" name="PostOffice" placeholder="Post Office" required><br><input class="address_box" type="text" name="District" placeholder="District" required><br><input class="address_box" type="text" name="State" placeholder="State" required><br><input class="address_box" type="text" name="Zipcode" placeholder="Zipcode" onkeypress="return isNumberKey(event)" maxlength="6" required><br>
 </div>
+</div>
+<div id="mobile_checkbox">
+<input type="checkbox" name="copyAddress" onclick="fillAddress()">
+<em>Check this box if Both Addresses are the same.</em>
 </div>
 <div id="Permenant_Address">
 <label>Permenant Address:</label>
-<div ><input class="address_box" type="text" name="_HouseName" placeholder="House name" required><br><input class="address_box" type="text" name="_PostOffice" placeholder="Post Office" required><br><input class="address_box" type="text" name="_District" placeholder="District" required><br><input class="address_box" type="text" name="_State" placeholder="State" required><br><input maxlength="6" class="address_box" type="number" name="_Zipcode" placeholder="Zipcode" onkeypress="return isNumberKey(event)" required><br>
+<div ><input class="address_box" type="text" name="_HouseName" placeholder="House name" required><br><input class="address_box" type="text" name="_PostOffice" placeholder="Post Office" required><br><input class="address_box" type="text" name="_District" placeholder="District" required><br><input class="address_box" type="text" name="_State" placeholder="State" required><br><input maxlength="6" class="address_box" type="text" name="_Zipcode" placeholder="Zipcode" onkeypress="return isNumberKey(event)" required><br>
 </div>
 </div>
 </div>
 <div id="check_box">
-<input type="checkbox" name="copyAddress" onclick="fillAddress(this.form)">
+<input type="checkbox" name="copyAddress" onclick="fillAddress()" >
 <em>Check this box if Both Addresses are the same.</em>
 </div>
 <div id="country_state">
@@ -212,18 +220,17 @@
 </select>
 </div>
 </fieldset>
-<fieldset id="submit_form">
-<input id="submit_btn" type="submit" value="Submit" onclick="store(); return validateFunction()" onsubmit="alert('Thank you for your feedback.');"  >
+<fieldset> 
+	<label>  Message </label>
+	<textarea name="message" rows="5" cols="10" placeholder="Message"></textarea>
 </fieldset>
-
+	<input type="submit" value="Save And Submit"  id="submit" onclick="store(); return validateFunction()">	
 </form>
+</div>
 
-</div>
-</div>
 <footer>
   <p><em>Contact information: </em><a href="mailto:vishnuvijayasankar@qburst.com">vishnuvijayasankar@qburst.com</a></p>
 </footer>
 <script src="form.js"></script>
 </body>
-
 </html>
