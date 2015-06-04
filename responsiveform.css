@@ -19,6 +19,7 @@ div#envelope{
    margin:auto;
    display: block;
 	padding: 5%;
+	position: relative;
 } 	
 form{
     width:60%; 
@@ -63,6 +64,7 @@ input[type=submit]
 	cursor:pointer;
 	margin: auto;
 	display: block;
+	margin-bottom: 50px;
 
 }
 #submit:hover

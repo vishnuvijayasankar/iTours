@@ -6,33 +6,33 @@
             "id": "1"
         },
         {
-            "destinationName": "images/reg.jpg",
-            "caption": "Sunrise",
+            "destinationName": "images/african-cats.jpg",
+            "caption": "African-cats",
             "id": "2"
         },
         {
-            "destinationName": "images/zebra.jpg",
-            "caption": "A Zeal of Zebras",
+            "destinationName": "images/African Lakes.jpeg",
+            "caption": "African Lakes",
             "id": "3"
         },
         {
-            "destinationName": "images/lion.jpg",
+            "destinationName": "images/African-Lion.jpg",
             "caption": "Meet the King",
             "id": "4"
         },
         {
-            "destinationName": "images/elephants.jpg",
-            "caption": "A Parade of Elephants",
+            "destinationName": "images/African-lioness.jpg",
+            "caption": "African-lioness",
             "id": "5"
         },
         {
-            "destinationName": "images/safari-thumb.jpg",
-            "caption": "Elephant Safari",
+            "destinationName": "images/African Rhino.jpg",
+            "caption": "African Rhino",
             "id": "6"
         },
         {
-            "destinationName": "images/eleph.jpg",
-            "caption": "Orange River",
+            "destinationName": "images/African-tree-viper.jpg",
+            "caption": "African tree viper",
             "id": "7"
         },
         {
@@ -41,38 +41,38 @@
             "id": "8"
         },
         {
-            "destinationName": "images/South-African-Safari.jpg",
-            "caption": "Resting After a Chase",
+            "destinationName": "images/beach.jpg",
+            "caption": "Beach",
             "id": "9"
         },
         {
-            "destinationName": "images/horsesafari.jpg",
-            "caption": "Horse Safari",
+            "destinationName": "images/Cheetah.jpeg",
+            "caption": "Cheetah",
             "id": "10"
         },
         {
-            "destinationName": "images/African-Safari.jpg",
-            "caption": "Trecking",
+            "destinationName": "images/Impenetrable jungle.jpg",
+            "caption": "Impenetrable jungle",
             "id": "11"
         },
         {
-            "destinationName": "images/luxury.jpeg",
-            "caption": "Resort",
+            "destinationName": "images/Imphala.jpg",
+            "caption": "Imphala",
             "id": "12"
         },
         {
-            "destinationName": "images/maxresdefault.jpg",
+            "destinationName": "images/Savanna Elephant.jpg",
             "caption": "Close Calls",
             "id": "13"
         },
         {
-            "destinationName": "images/luxury2.jpg",
+            "destinationName": "images/tree-Hotel.jpg",
             "caption": "Wild Camps",
             "id": "14"
         },
         {
-            "destinationName": "images/Walking_Safaris.png",
-            "caption": "Girraffes",
+            "destinationName": "images/Wild Bulls.jpg",
+            "caption": "Wild Bulls",
             "id": "15"
         }
 
