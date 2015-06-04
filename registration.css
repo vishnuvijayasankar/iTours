@@ -127,11 +127,10 @@ header{text-align: center;}
 
 }
 form{
+	margin-top: 60px;
 	padding: 10px;
 	clear: both;
     overflow: hidden;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 fieldset{
 	background-color: black;

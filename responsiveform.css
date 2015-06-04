@@ -12,13 +12,21 @@ body {
 	font-family: 'Roboto Slab', serif;  
 }
 div#envelope{
-	width: 50%;
-	margin: 40px 30% 10px 25%;
-	padding:10px 0;
+	top:0;
+   bottom:0;
+   left:0;
+   right:0;
+   margin:auto;
+   display: block;
+	padding: 5%;
 } 	
 form{
-	width:85%;
-	margin:4% 15%;
+    width:80%; 
+	margin:auto;
+   display: block;
+	margin:auto;
+	margin-top: 60px;
+	/*margin-left: 21%;*/
 }  
 header{
 	background-color: #4180C5;
