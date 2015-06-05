@@ -167,12 +167,11 @@ footer{
 
 	background-color: black;
 	width: 100%;
-	position:absolute;
+	position:relative;
 	opacity: 0.9;
 	margin-top: 50px;
 	bottom: 0;
 	border-top: 1px solid silver;
-	position: fixed;
 	overflow: hidden;
 }
 footer p{
