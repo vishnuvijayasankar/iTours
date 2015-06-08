@@ -17,7 +17,7 @@ $(document).ready(function(){
 
             $.each(destinations, function(id, destination) {
                 $('#destinations').append('<a href = "javascript:void(0)" onclick = "popup('+destination["id"]+')" >'+'<img class="slider" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'">'+'</a>');
-                $('#popupContainer').append('<div id="'+destination["id"]+'" class="white_content"><a id="closeButton" href = "javascript:void(0)" ><h3>'+destination["caption"]+'</h3><img onclick ="closeP('+destination["id"]+')"  id="closeButton" src="images/close.png"</a><img class="popupImg" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'"></div>');
+                $('#popupContainer').append('<div id="'+destination["id"]+'" class="white_content"><a href = "javascript:void(0)" ><h3>'+destination["caption"]+'<img onclick ="closeP('+destination["id"]+')"  id="closeButton" src="images/close.png"></h3></a><center><img id="leftArrow" src="images/leftArrow.png"><img class="popupImg" title="'+destination["caption"]+'" src="'+destination["destinationName"]+'"><img id="rightArrow" src="images/rightArrow.png"></center></div>');
 
             });
         });

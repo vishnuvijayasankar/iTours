@@ -191,6 +191,67 @@ a{
     margin-bottom: 50px;
 }
 
+
+.black_overlay{
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: fixed;
+/*left: 25%;*/
+margin:auto;
+height:70%;
+left: 0;
+right: 0;
+text-align: center;
+width: 65%;
+top: 0;
+bottom:0;
+/*padding: 16px;*/
+border: 16px solid orange;
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+.popupImg{
+width: 75%;
+overflow:auto;
+
+}
+#closeButton{
+	float: right;
+	display: inline;
+	height:35px;
+}
+h3{
+	display: block;
+	padding:1%;
+	margin-top: 0px;
+}
+#leftArrow{
+	float:left;
+	width:10%;
+	margin-top: 13%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#rightArrow{
+	float:right;
+	width:10%;
+	margin-top: 13%;
+	vertical-align: middle;
+	cursor: pointer;
+}
 @media (max-width: 950px) {
     #company_name {
        position:absolute;
@@ -243,46 +304,4 @@ a{
 	border: 1px solid #FF8700;
 	}
 
-}
-	
-.black_overlay{
-display: none;
-position: fixed;
-top: 0%;
-left: 0%;
-width: 100%;
-height: 100%;
-background-color: black;
-z-index:1001;
--moz-opacity: 0.8;
-opacity:.80;
-filter: alpha(opacity=80);
-}
-.white_content {
-display: none;
-position: fixed;
-top: 25%;
-left: 25%;
-width: 40%;
-height: 50%;
-padding: 16px;
-border: 16px solid orange;
-background-color: white;
-z-index:1002;
-overflow: auto;
-}
-.popupImg{
-  width:90%;
-  float: left;
-  display: :block;
-  padding:1%;
-}
-#closeButton{
-	float: right;
-	display: inline;
-	height:35px;
-}
-h3{
-	display: inline;
-	padding:1%;
-}
+}	
